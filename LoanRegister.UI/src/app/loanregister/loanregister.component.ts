@@ -38,7 +38,7 @@ export class LoanregisterComponent implements OnInit {
         }
       );
   }
-  filterStudents() {
+  filterLoans() {
     this.dataSource.filter = this.filterString.trim().toLowerCase();
   }
 }

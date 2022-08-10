@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoanregisterComponent } from './loanregister/loanregister.component';
+import { ViewLoanregisterComponent } from './loanregister/view-loanregister/view-loanregister.component';
+
 
 const routes: Routes = [
   {
@@ -10,6 +12,14 @@ const routes: Routes = [
   {
     path:'loanregister',
     component:LoanregisterComponent
+  },
+  {
+    path:'loanregister/:id',
+    component:ViewLoanregisterComponent
+  },
+  {
+    path:'loanregister/add',
+    component:ViewLoanregisterComponent
   }
 ];
 
